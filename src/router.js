@@ -4,7 +4,8 @@ import Home from './views/Home.vue'
 import StudentsShow from './views/StudentsShow.vue'
 import ExperiencesShow from './views/ExperiencesShow.vue'
 // import EducationsShow from './views/EducationsShow.vue'
-// import CapstonesShow from './views/CapstonesShow.vue'
+import CapstonesShow from './views/CapstonesShow.vue'
+// import SkillsShow from './views'
 
 Vue.use(Router)
 
@@ -32,16 +33,16 @@ export default new Router({
        path: '/experiences/:id',
        name: 'experiencesShow',
        component: ExperiencesShow
-    }
+    },
     // {
     //    path: '/educations/:id',
     //    name: 'educationsShow',
     //    component: educationsShow
     // },
-    // {
-    //    path: '/capstones/:id',
-    //    name: 'capstonesShow',
-    //    component: CapstonesShow
-    // }
+    {
+       path: '/capstones/:id',
+       name: 'capstonesShow',
+       component: CapstonesShow
+    }
   ]
 })
