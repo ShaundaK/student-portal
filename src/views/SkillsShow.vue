@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p> Student ID: {{ experience.student_id }} </p>
-    <p> Start Date: {{ experience.skill_name }} </p>
+    <p> Student ID: {{ skill.student_id }} </p>
+    <p> Start Date: {{ skill.skill_name }} </p>
     
    </div>
 </template>

@@ -59,7 +59,7 @@ export default new Router({
     {
        path: '/educations/:id',
        name: 'educationsShow',
-       component: educationsShow
+       component: EducationsShow
     },
     {
        path: '/capstones/:id',
@@ -70,7 +70,7 @@ export default new Router({
        path: '/skills/:id',
        name: 'skillsShow',
        component: SkillsShow
-    }
+    },
 
     {
       path: '/style',
