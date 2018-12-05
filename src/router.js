@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
 import Logout from "./views/Logout.vue"
-import Update from "./views/UpdateFeature.vue";
+import EditStudentInfo from "./views/EditStudentInfo.vue";
 
 
 Vue.use(Router)
@@ -26,9 +26,9 @@ export default new Router({
       component: Logout
     },
     {
-      path: '/update',
-      name: 'update',
-      component: Update
+      path: '/editstudentinfo',
+      name: 'editstudentinfo',
+      component: EditStudentInfo
     },
     {
       path: '/about',
