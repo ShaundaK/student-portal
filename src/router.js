@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import StudentsShow from './views/StudentsShow.vue'
 import ExperiencesShow from './views/ExperiencesShow.vue'
-// import EducationsShow from './views/EducationsShow.vue'
+import EducationsShow from './views/EducationsShow.vue'
 import CapstonesShow from './views/CapstonesShow.vue'
-// import SkillsShow from './views'
+import SkillsShow from './views/SkillsShow.vue'
 
 Vue.use(Router)
 
@@ -34,15 +34,20 @@ export default new Router({
        name: 'experiencesShow',
        component: ExperiencesShow
     },
-    // {
-    //    path: '/educations/:id',
-    //    name: 'educationsShow',
-    //    component: educationsShow
-    // },
+    {
+       path: '/educations/:id',
+       name: 'educationsShow',
+       component: educationsShow
+    },
     {
        path: '/capstones/:id',
        name: 'capstonesShow',
        component: CapstonesShow
+    },
+    {
+       path: '/skills/:id',
+       name: 'skillsShow',
+       component: SkillsShow
     }
   ]
 })
