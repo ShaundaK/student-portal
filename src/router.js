@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
-import Logout from "./views/Logout.vue";
+import Logout from "./views/Logout.vue"
+import EditStudentInfo from "./views/EditStudentInfo.vue";
 import Style from './views/Style.vue'
 
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/logout',
       name: 'logout',
       component: Logout
+    },
+    {
+      path: '/editstudentinfo',
+      name: 'editstudentinfo',
+      component: EditStudentInfo
     },
     {
       path: '/about',
